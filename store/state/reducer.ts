@@ -12,7 +12,7 @@ const initialState = {
   ssn: '',
   phone: '',
   email: '',
-  country: '',
+  country: 'SWE',
 };
 
 export default (state: State = initialState, action: StateActions) =>

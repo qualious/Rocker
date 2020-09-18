@@ -6,7 +6,7 @@ const validate = (ssn: string, phone: string, email: string, country: string) =>
   email.length > 0 &&
   country &&
   vSSN(ssn) &&
-  vPhone(phone) &&
+  vPhone(phone.replace(/-|\s/g, '').substring(3)) &&
   vEmail(email);
 
 export default validate;
