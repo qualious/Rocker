@@ -16,8 +16,6 @@ const Input: React.FunctionComponent<IInput> = ({
   const [valid, setValid] = useState(true);
   const onChange = (formatted: string, extracted: string) => {
     setValid(validator(mask ? extracted : formatted));
-    console.log('formatted: ', formatted);
-    console.log('extracted: ', extracted);
     onChangeText(formatted);
   };
   const borderColor = {
