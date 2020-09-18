@@ -67,10 +67,9 @@ const Home = () => {
                 data={data}
                 loading={loading}
                 value={country}
-                onPress={({ value }) => {
-                  console.log(value);
-                  stateDispatch({ type: CHANGE_COUNTRY, text: value });
-                }}
+                onPress={({ value }) =>
+                  stateDispatch({ type: CHANGE_COUNTRY, text: value })
+                }
               />
               <Button
                 text="Submit"

@@ -13,7 +13,6 @@ const Dropdown: React.FunctionComponent<IDropdown> = ({
   onPress,
 }) => {
   if (loading || data.length === 0) return <View />;
-  console.log('data: ', data);
   return (
     <>
       <Text style={styles.label}>Country</Text>
